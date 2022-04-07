@@ -6,13 +6,16 @@ if ! [ -x "$(command -v faucet)" ]; then
     exit 1
 fi
 
-# CLI Params
+# Args
+HOME=$1
+PORT=$2
+
+# faucet CLI Params
 FAUCET_ACCOUNT="node1"
 CLI_NAME="hid-noded"
 CREDIT_AMOUNT="100"
 DENOMS="uhid"
 KEYRING_BACKEND="test"
-PORT="8000"
 
 # Run the faucet
 faucet -account-name ${FAUCET_ACCOUNT} \
@@ -21,3 +24,4 @@ faucet -account-name ${FAUCET_ACCOUNT} \
        -denoms ${DENOMS} \
        -keyring-backend ${KEYRING_BACKEND} \
        -port ${PORT}
+       -home ${HOME}
