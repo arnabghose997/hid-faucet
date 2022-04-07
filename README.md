@@ -16,7 +16,7 @@ make install
 
 Run the following to start the faucet:
 
-```
-./scripts/run_faucet.sh
+```sh
+./scripts/run_faucet.sh <home-dir> <port>
 ```
 
