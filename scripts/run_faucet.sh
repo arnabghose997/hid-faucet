@@ -11,7 +11,6 @@ HOME=$1
 PORT=$2
 
 # faucet CLI Params
-FAUCET_ACCOUNT="node1"
 CLI_NAME="hid-noded"
 CREDIT_AMOUNT="100"
 DENOMS="uhid"
