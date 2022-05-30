@@ -17,6 +17,7 @@ make install
 Run the following to start the faucet:
 
 ```sh
+export FAUCET_ACCOUNT=<name of the key (not address) that you want to set as faucet>
 ./scripts/run_faucet.sh <home-dir> <port>
 ```
 
